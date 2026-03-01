@@ -1,0 +1,156 @@
+{
+  "subgroup_labels": {
+    "1": {
+      "name": "Post-KT Full Model (Tacrolimus / FK506)",
+      "short": "Subgroup 1 — Tacrolimus",
+      "description": "Post-kidney transplant patients; includes FK506 attainment status and 25 variables."
+    },
+    "2": {
+      "name": "Post-KT Hematology / ICU Model",
+      "short": "Subgroup 2 — Hematology",
+      "description": "Post-kidney transplant patients; hematological and ICU-focused variables."
+    },
+    "3": {
+      "name": "Hepatic / Coagulation Model",
+      "short": "Subgroup 3 — Hepatic/Coag",
+      "description": "Patients with hepatic involvement; coagulation and liver-function variables."
+    }
+  },
+
+  "var_labels": {
+    "肌酐":              { "en": "Serum Creatinine",                      "unit": "μmol/L" },
+    "尿素":              { "en": "Blood Urea Nitrogen (BUN)",              "unit": "mmol/L" },
+    "尿酸":              { "en": "Serum Uric Acid",                        "unit": "μmol/L" },
+    "血小板计数":        { "en": "Platelet Count",                         "unit": "×10⁹/L" },
+    "中性粒细胞计数":    { "en": "Neutrophil Count",                       "unit": "×10⁹/L" },
+    "白蛋白_溴甲酚绿法_":{ "en": "Albumin (BCG method)",                   "unit": "g/L" },
+    "总蛋白":            { "en": "Total Protein",                          "unit": "g/L" },
+    "碱性磷酸酶":        { "en": "Alkaline Phosphatase (ALP)",             "unit": "U/L" },
+    "血糖":              { "en": "Blood Glucose",                          "unit": "mmol/L" },
+    "未结合胆红素_干_":  { "en": "Indirect Bilirubin (dry method)",        "unit": "μmol/L" },
+    "胱抑素c":           { "en": "Cystatin C",                             "unit": "mg/L" },
+    "单核细胞百分比":    { "en": "Monocyte Percentage",                    "unit": "proportion (0.08 = 8%)" },
+    "平均血红蛋白含量":  { "en": "Mean Corpuscular Hemoglobin (MCH)",      "unit": "pg" },
+    "淋巴细胞计数":      { "en": "Lymphocyte Count",                       "unit": "×10⁹/L" },
+    "红细胞计数":        { "en": "Red Blood Cell Count",                   "unit": "×10¹²/L" },
+    "红细胞宽度_sd值":   { "en": "RDW-SD",                                 "unit": "fL" },
+    "钙":                { "en": "Serum Calcium",                          "unit": "mmol/L" },
+    "天门冬氨酸转氨酶":  { "en": "Aspartate Aminotransferase (AST)",       "unit": "U/L" },
+    "单核细胞计数":      { "en": "Monocyte Count",                         "unit": "×10⁹/L" },
+    "中性粒细胞百分比":  { "en": "Neutrophil Percentage",                  "unit": "proportion (0.78 = 78%)" },
+    "总胆红素":          { "en": "Total Bilirubin",                        "unit": "μmol/L" },
+    "钾离子":            { "en": "Serum Potassium",                        "unit": "mmol/L" },
+    "胆碱酯酶":          { "en": "Cholinesterase (ChE)",                   "unit": "U/L" },
+    "平均血小板体积":    { "en": "Mean Platelet Volume (MPV)",             "unit": "fL" },
+    "凝血酶比率":        { "en": "Thrombin Ratio",                         "unit": "ratio" },
+    "纤维蛋白原含量":    { "en": "Fibrinogen",                             "unit": "g/L" },
+    "补_间接胆红素":     { "en": "Indirect Bilirubin (supplemental)",      "unit": "μmol/L" },
+    "补_前白蛋白":       { "en": "Prealbumin (Transthyretin)",             "unit": "mg/L" },
+    "贫血":              { "en": "Anemia",                                 "unit": "" },
+    "抗酸药":            { "en": "Antacids",                               "unit": "" },
+    "利尿药":            { "en": "Diuretics",                              "unit": "" },
+    "抗凝药":            { "en": "Anticoagulants",                         "unit": "" },
+    "吸附剂":            { "en": "Intestinal Adsorbents",                  "unit": "" },
+    "促凝药":            { "en": "Procoagulants / Hemostatics",            "unit": "" },
+    "钙补充剂":          { "en": "Calcium Supplements",                    "unit": "" },
+    "麻醉药":            { "en": "Anesthetics",                            "unit": "" },
+    "免疫球蛋白":        { "en": "Immunoglobulin (IVIG)",                  "unit": "" },
+    "正性肌力药":        { "en": "Positive Inotropic Agents",              "unit": "" },
+    "抗癫痫药":          { "en": "Antiepileptics",                         "unit": "" },
+    "胃肠黏膜保护剂":    { "en": "GI Mucosal Protective Agents",           "unit": "" },
+    "升白药":            { "en": "G-CSF (Colony-Stimulating Factor)",      "unit": "" },
+    "抗痛风":            { "en": "Anti-Gout Medications",                  "unit": "" },
+    "FK506":             { "en": "Tacrolimus (FK506) Attainment Status",   "unit": "" },
+    "扩容药":            { "en": "Volume Expanders",                       "unit": "" },
+    "精神治疗药":        { "en": "Psychotropic Medications",               "unit": "" },
+    "血管活性药":        { "en": "Vasopressors / Vasoactive Agents",       "unit": "" },
+    "ICU":               { "en": "ICU Admission",                          "unit": "" },
+    "肝硬化":            { "en": "Liver Cirrhosis",                        "unit": "" },
+    "祛痰药":            { "en": "Expectorants / Mucolytics",              "unit": "" },
+    "NSAID":             { "en": "NSAIDs",                                 "unit": "" },
+    "矿物质补充剂":      { "en": "Mineral Supplements",                    "unit": "" }
+  },
+
+  "help_text": {
+    "肌酐":              "Post-transplant creatinine; training median 921.95 μmol/L; range 50–2500",
+    "尿素":              "BUN; training median 23.0 mmol/L; range 1–80",
+    "尿酸":              "Uric acid; training median 363.0 μmol/L; range 50–1200",
+    "血小板计数":        "PLT; training median 198 (SG1) / 181 (SG2) ×10⁹/L; range 5–1200",
+    "中性粒细胞计数":    "ANC; training median 4.45 (SG1) / 4.92 (SG2) ×10⁹/L; range 0.1–50",
+    "白蛋白_溴甲酚绿法_":"Albumin BCG; training median 45.3 g/L; range 10–60",
+    "总蛋白":            "Total protein; training median 74.2 g/L; range 20–120",
+    "碱性磷酸酶":        "ALP; training median 81.0 U/L; range 10–2000",
+    "血糖":              "Glucose; training median 5.24 mmol/L; range 1–40",
+    "未结合胆红素_干_":  "Indirect bilirubin (dry); training median 2.0 μmol/L; range 0.1–50",
+    "胱抑素c":           "Cystatin C; training median 2.01 mg/L; range 0.1–15",
+    "单核细胞百分比":    "⚠️ Enter as decimal (e.g. 0.08 for 8%); training median 0.081; range 0.00–0.50",
+    "平均血红蛋白含量":  "MCH; training median 29.9 pg; range 18–45",
+    "淋巴细胞计数":      "ALC; training median 0.895 ×10⁹/L; range 0.01–10",
+    "红细胞计数":        "RBC; training median 3.76 ×10¹²/L; range 0.5–8",
+    "红细胞宽度_sd值":   "RDW-SD; training median 46.25 fL; range 20–120",
+    "钙":                "Serum calcium; training median 2.28 mmol/L; range 0.5–4.0",
+    "天门冬氨酸转氨酶":  "AST; training median 36.0 U/L; range 5–10000",
+    "单核细胞计数":      "Monocyte count; training median 0.43 ×10⁹/L; range 0.0–5",
+    "中性粒细胞百分比":  "⚠️ Enter as decimal (e.g. 0.78 for 78%); training median 0.8075; range 0.0–1.0",
+    "总胆红素":          "Total bilirubin; training median 17.75 μmol/L; range 1–1000",
+    "钾离子":            "Serum potassium; training median 3.9 mmol/L; range 1.5–9.0",
+    "胆碱酯酶":          "ChE; training median 4460 U/L; range 100–20000",
+    "平均血小板体积":    "MPV; training median 11.2 fL; range 3–25",
+    "凝血酶比率":        "Thrombin ratio (patient/control); training median 1.02; range 0.5–10",
+    "纤维蛋白原含量":    "Fibrinogen; training median 2.375 g/L; range 0.1–15",
+    "补_间接胆红素":     "Supplemental indirect bilirubin; training median 6.7 μmol/L; range 0.1–500",
+    "补_前白蛋白":       "Prealbumin; training median 151.5 mg/L; range 5–600",
+    "FK506":             "Tacrolimus trough level attainment during hospitalization (target 8–12 ng/mL or per protocol)"
+  },
+
+  "level_labels": {
+    "FK506": {
+      "全程窗内": "Consistently on Target (all troughs within range)",
+      "曾超窗":   "Intermittently on Target (some troughs out of range)",
+      "全程超窗": "Never on Target (all troughs out of range)"
+    }
+  },
+
+  "_low_confidence_items": [
+    {
+      "key": "单核细胞百分比",
+      "issue": "Unit ambiguity. JSON mean≈0.083 suggests decimal proportion. If lab reports as %, divide by 100 before entering.",
+      "action": "Confirm: decimal proportion (0.08) or percent (8)?"
+    },
+    {
+      "key": "中性粒细胞百分比",
+      "issue": "Unit ambiguity. JSON mean≈0.779 suggests decimal proportion.",
+      "action": "Confirm: decimal proportion (0.78) or percent (78)?"
+    },
+    {
+      "key": "天门冬氨酸转氨酶",
+      "issue": "Very wide SD (716) vs mean (249) and median (36). Likely includes acute liver failure outliers.",
+      "action": "Review clinical input range for your population."
+    },
+    {
+      "key": "凝血酶比率",
+      "issue": "Could be Thrombin Ratio, PT Ratio, or TT Ratio. Label set to 'Thrombin Ratio'.",
+      "action": "Confirm exact coagulation assay name."
+    },
+    {
+      "key": "补_间接胆红素",
+      "issue": "Prefix '补_' suggests supplemental or repeat assay. English set to 'Indirect Bilirubin (supplemental)'.",
+      "action": "Confirm whether this is a repeat assay or different methodology."
+    },
+    {
+      "key": "补_前白蛋白",
+      "issue": "Prefix '补_' suggests supplemental prealbumin. Note: prealbumin ≠ albumin.",
+      "action": "Confirm this is prealbumin (PAB/transthyretin), not albumin."
+    },
+    {
+      "key": "血管活性药 (Subgroup 2 only)",
+      "issue": "cat_impute='1' (Used). Leaving blank assumes vasopressors WERE used — unlike all other drugs.",
+      "action": "Confirm this default imputation is appropriate for your population."
+    },
+    {
+      "key": "促凝药 (Subgroup 1)",
+      "issue": "Coefficient = -0.0067, nearly zero. May reflect confounding in training data.",
+      "action": "Consider whether this variable meaningfully contributes to the model."
+    }
+  ]
+}
