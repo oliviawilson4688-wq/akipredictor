@@ -23,8 +23,8 @@ MODELS = {
 
 # ── Subgroup 1: Post-KT Full Model (Tacrolimus / FK506) ──────
 1: {
-    "name":        "Post-KT Full Model (Tacrolimus / FK506)",
-    "description": "Post-kidney transplant patients; FK506 attainment + 25 variables.",
+    "name":        "SG1 — Kidney Transplant group",
+    "description": "Kidney transplant recipients.",
     "intercept":   -3.9167448076114226,
     "cal_a":       -0.07942559395364185,   # from shrunk1 recalibration block
     "cal_b":        0.8785993043794286,
@@ -79,8 +79,8 @@ MODELS = {
 
 # ── Subgroup 2: Post-KT Hematology / ICU Model ───────────────
 2: {
-    "name":        "Post-KT Hematology / ICU Model",
-    "description": "Post-kidney transplant patients; hematological and ICU-focused variables.",
+    "name":        "SG2 — Prior kidney transplant history group",
+    "description": "Patients with a history of prior kidney transplantation.",
     "intercept":   -3.6606838134695305,
     "cal_a":       -0.07942559395364185,   # global default (shrunk2 has same values)
     "cal_b":        0.8785993043794286,
@@ -114,8 +114,8 @@ MODELS = {
 
 # ── Subgroup 3: Hepatic / Coagulation Model ──────────────────
 3: {
-    "name":        "Hepatic / Coagulation Model",
-    "description": "Patients with hepatic involvement; coagulation and liver-function variables.",
+    "name":        "SG3 — Non–kidney transplant group",
+    "description": "Patients without kidney transplantation.",
     "intercept":   -6.577238277941135,
     "cal_a":        0.05012968694220859,   # from shrunk3 recalibration block
     "cal_b":        0.8305403277675305,
