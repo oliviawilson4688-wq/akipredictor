@@ -1,21 +1,22 @@
 {
   "subgroup_labels": {
     "1": {
-      "name": "Post-KT Full Model (Tacrolimus / FK506)",
-      "short": "Subgroup 1 — Tacrolimus",
-      "description": "Post-kidney transplant patients; includes FK506 attainment status and 25 variables."
+      "name": "SG1 — Kidney Transplant (KT) group",
+      "short": "SG1 — KT group",
+      "description": "Kidney transplant recipients."
     },
     "2": {
-      "name": "Post-KT Hematology / ICU Model",
-      "short": "Subgroup 2 — Hematology",
-      "description": "Post-kidney transplant patients; hematological and ICU-focused variables."
+      "name": "SG2 — Prior kidney transplant history group",
+      "short": "SG2 — Prior KT history",
+      "description": "Patients with a history of prior kidney transplantation."
     },
     "3": {
-      "name": "Hepatic / Coagulation Model",
-      "short": "Subgroup 3 — Hepatic/Coag",
-      "description": "Patients with hepatic involvement; coagulation and liver-function variables."
+      "name": "SG3 — Non–kidney transplant group",
+      "short": "SG3 — Non-KT group",
+      "description": "Patients without kidney transplantation."
     }
-  },
+  }
+}
 
   "var_labels": {
     "肌酐":              { "en": "Serum Creatinine",                      "unit": "μmol/L" },
